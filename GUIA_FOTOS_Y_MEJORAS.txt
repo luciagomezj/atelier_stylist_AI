@@ -1,0 +1,38 @@
+AI STYLIST PRO V2 - GUIA RAPIDA (WINDOWS / VS CODE)
+
+1. HAZ COPIA DE SEGURIDAD DE TU CARPETA AI_STYLIST.
+2. Descomprime este ZIP en una carpeta aparte.
+3. Para usar la version completa, copia app.py, stylist.py, database.py,
+   catalog.csv, requirements.txt y las carpetas images/ y photos/ a AI_STYLIST.
+   No copies ni borres .venv. Nota: esta version usa su propio catalogo y
+   base de datos; tus favoritos anteriores pueden referirse a otros IDs.
+4. En la terminal de VS Code, dentro de AI_STYLIST, ejecuta:
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+   .\.venv\Scripts\python.exe -m streamlit run app.py
+5. Comprueba que Ollama funciona y que tienes qwen3:1.7b con 'ollama list'.
+
+FOTOS REALES SIN SUBIRLAS UNA A UNA:
+- Consigue imagenes de productos que tengas permiso para utilizar.
+- Ponlas TODAS a la vez en la carpeta photos/ con el ID del producto:
+  photos/1.jpg, photos/2.jpg, photos/3.webp, etc.
+- La web detecta JPG, JPEG, WEBP o PNG automaticamente.
+- Si no hay foto real, muestra la ilustracion incluida en images/.
+- Alternativamente, añade una URL de imagen permitida en la columna
+  image_url de catalog.csv. No es necesario descargar la foto.
+- En product_url pega el enlace oficial de la ficha del producto.
+- Actualiza nombre y precio con los datos reales: los del CSV son ficticios.
+- No redistribuyas fotos de Zara u otras marcas sin permiso.
+
+FUNCIONES INCLUIDAS:
+- Outfit por ocasion, estilo, color, temporada, presupuesto y texto libre
+- LLM Qwen por Ollama, seleccion de combinaciones validas
+- Prendas basicas y complementos opcionales
+- Sustituir prendas, favoritos, comparacion y chat
+- Catalogo visual y dashboard de recomendaciones
+
+LIMITACIONES:
+- Las ilustraciones incluidas no son fotografias de tienda.
+- Chroma / RAG aun no esta integrado.
+- La preferencia de color es flexible; no una restriccion estricta.
+- Es una demo local, no una tienda oficial ni un checkout.
+- Si Python 3.15 no admite alguna dependencia, usa Python 3.12.

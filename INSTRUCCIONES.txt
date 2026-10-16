@@ -1,0 +1,10 @@
+ATELIER AI — FASE 1
+
+1. Haz copia de seguridad de app.py y stylist.py.
+2. Copia SOLO los nuevos app.py y stylist.py a tu carpeta AI_STYLIST.
+3. NO borres photos, images, catalog.csv, database.py ni .venv.
+4. Ejecuta: .\.venv\Scripts\python.exe -m streamlit run app.py --server.port 8502
+5. Prueba Interview / Classic / 150 euros: las prendas basicas seran de entrevista.
+6. Prueba las opciones Budget, Balanced y Premium.
+
+NOTA: Las variantes dependen del numero de prendas disponibles; con 18 articulos puede haber pocas opciones. Las fotos y los precios son demostrativos.
